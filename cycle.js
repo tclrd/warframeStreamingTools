@@ -23,7 +23,6 @@ window.setInterval(function(){
     }
     function filterAlerts(alerts){
         for (let alert of alerts){
-            console.log(alert.rewardTypes)
             if (alert.rewardTypes[0] === "nitain"){
                 nitainActive = true;
                 $(`#nitain-alert`).html(`
