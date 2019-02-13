@@ -24,7 +24,7 @@ window.setInterval(function(){
     function filterAlerts(alerts){
         for (let alert of alerts){
             console.log(alert.rewardTypes)
-            if (alert.rewardTypes[0] === "nitainExtract"){
+            if (alert.rewardTypes[0] === "nitain"){
                 nitainActive = true;
                 $(`#nitain-alert`).html(`
                 <div class="alert-icon" style="background-image:url(./images/nitain.png)"></div>
@@ -41,7 +41,7 @@ window.setInterval(function(){
             
         };
     }
-},5000);
+},10000);
 
 window.setInterval(function(){
         $(`#cetus-wrapper`).addClass("animate");
@@ -57,7 +57,7 @@ window.setInterval(function(){
         });
     });
 
-},600000)
+},360000)
 
 function sleep(ms)
 {
